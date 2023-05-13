@@ -23,9 +23,9 @@ function letterCombinations(input_digit) {
 	}
 	let finalAns = [];
 
-	for(let s in ans) {
-		if(s.length == input_digit.length)
-			finalAns.push(s);
+	for(let i=0; i<ans.lenght; i++) {
+		if(ans[i].length == input_digit.length)
+			finalAns.push(ans[i]);
 	}
 	return finalAns;
 }
