@@ -21,7 +21,13 @@ function letterCombinations(input_digit) {
 			}
 		itr++;
 	}
-	return ans.sort();
+	let finalAns = [];
+
+	for(let s in ans) {
+		if(s.length == input_digit.length)
+			finalAns.push(s);
+	}
+	return finalAns;
 }
 
 module.exports = letterCombinations;
