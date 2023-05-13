@@ -23,7 +23,7 @@ function letterCombinations(input_digit) {
 	}
 	let finalAns = [];
 
-	for(let i=0; i<ans.lenght; i++) {
+	for(let i=0; i<ans.length; i++) {
 		if(ans[i].length == input_digit.length)
 			finalAns.push(ans[i]);
 	}
