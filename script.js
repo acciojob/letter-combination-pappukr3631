@@ -3,12 +3,12 @@ function letterCombinations(input_digit) {
 	let arr = ["0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
 
 	let ans = [];
-
-	for(let i=0; i<arr[input_digit[0]].length; i++) {
-		for(let j=0; j<arr[input_digit[1]].length; j++) {
-			ans.push(arr[input_digit[0]][i]+arr[input_digit[1]][j]);
-		}
-	}
+//length of input_digit can be more than 2 so below code fails.
+	// for(let i=0; i<arr[input_digit[0]].length; i++) {
+	// 	for(let j=0; j<arr[input_digit[1]].length; j++) {
+	// 		ans.push(arr[input_digit[0]][i]+arr[input_digit[1]][j]);
+	// 	}
+	// }
 	return ans.sort();
 }
 
