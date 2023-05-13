@@ -9,7 +9,7 @@ function letterCombinations(input_digit) {
 			ans.push(arr[input_digit[0]][i]+arr[input_digit[1]][j]);
 		}
 	}
-	return ans;
+	return ans.sort();
 }
 
 module.exports = letterCombinations;
