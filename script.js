@@ -6,7 +6,7 @@ function letterCombinations(input_digit) {
 
 	for(let i=0; i<arr[input_digit[0]].length; i++) {
 		for(let j=0; j<arr[input_digit[1]].length; j++) {
-			ans.push(arr[input_digit[i]]+arr[input_digit[j]]);
+			ans.push(arr[input_digit[0]][i]+arr[input_digit[1]][j]);
 		}
 	}
 	ans.sort();
